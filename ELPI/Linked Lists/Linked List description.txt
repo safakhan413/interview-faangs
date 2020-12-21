@@ -14,8 +14,9 @@ and set prev. next equal to n. next. If the list is doubly linked, we must also 
 n. next. prev equal to n. prev. The important things to remember are (1) to check for the null pointer
 and (2) to update the head or tail pointer as necessary.
 
-Additionally, if you implement this code in C, C++ or another language that requires the developer to do
-memory management, you should consider if the removed node should be deallocated
+Insert and delete are local operations and have O(1) time complexity. Search requires traversing the
+entire list, e.g,1f the key is at the last node or is absent, so its time complexity is O(n), where n is
+the number of nodes.
 
 􀀢 The "Runner"Technique
 The "runner" (or second pointer) technique is used in many linked list problems. The runner technique

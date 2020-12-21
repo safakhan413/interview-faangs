@@ -15,7 +15,6 @@ class SLinkedList:
             printval = printval.nextval
     def AtBegining(self,newdata):
         NewNode = Node(newdata)
-
 # Update the new nodes next val to existing node
         NewNode.nextval = self.headval
         self.headval = NewNode
