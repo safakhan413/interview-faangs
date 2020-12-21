@@ -48,11 +48,11 @@ class DLinkedList:
                 n.next = new_node
 
     def insert_before_item(self, x, data):
-        if self.start_node is None:
+        if self.headVal is None:
             print("List is empty")
             return
         else:
-            n = self.start_node
+            n = self.headVal
             while n is not None:
                 if n.item == x:
                     break
@@ -68,11 +68,11 @@ class DLinkedList:
                 n.prev = new_node
 
     def traverse_list(self):
-        if self.start_node is None:
+        if self.headVal is None:
             print("List has no element")
             return
         else:
-            n = self.start_node
+            n = self.headVal
             while n is not None:
                 print(n.item, " ")
                 n = n.nref
