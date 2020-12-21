@@ -1,7 +1,7 @@
 import re
 from collections import Counter
 
-#Counter(aabcccccaaa) gives a dict 
+#Counter(aabcccccaaa) gives a dict
 
 def compress(string):
   if len(string) == 0:
