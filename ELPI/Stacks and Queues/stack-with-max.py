@@ -22,8 +22,10 @@ class Stack:
     def push(self, x):
         self._s.append(
             self.EWCM(x, x if self.empty() else max(x, self.max())))
+        # print(self.max())
 
 st = Stack()
 st.push(5)
+st.push(8)
 st.push(8)
 print(st.max())
